@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
 
+  //names of routes
+  routes = [
+    { name: 'Inicio', link: '/home' },
+    { name: 'Mis Gustos', link: '/my-likes' },
+    { name: 'Contácteme', link: '/contact-me' },
+  ]
 }

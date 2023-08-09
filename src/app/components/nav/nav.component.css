@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Vina+Sans&display=swap');
+
+/* .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: auto 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} */
+
+/* @media screen and (min-width: 768px) {
+    .dropdown-content {
+        display: flex;
+        position: relative;
+        z-index: 0;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: flex;
+    }
+} */

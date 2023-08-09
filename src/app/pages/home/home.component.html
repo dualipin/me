@@ -1,1 +1,53 @@
-<p>home works!</p>
+<article class="flex flex-col py-10">
+  <section
+    class="mx-2 mt-0 rounded-md bg-slate-800 p-2 text-center sm:mx-20 sm:mt-10"
+  >
+    ¡Hola Mundo!
+  </section>
+
+  <section
+    class="mt-5 flex flex-wrap items-center justify-center sm:mt-12 sm:justify-between lg:justify-center"
+  >
+    <div class="w-full space-y-1 sm:w-1/2 sm:space-y-2 md:w-7/12">
+      <h2 class="text-3xl font-extrabold sm:text-4xl">Martin Sanchez Reyes</h2>
+      <p class="text-lg font-extralight">Desarrollador Web</p>
+    </div>
+    <img
+      class="mt-5 aspect-square w-56 rounded-full border border-slate-300 bg-slate-600 object-cover object-top shadow-lg shadow-slate-700 sm:mt-0 sm:w-48 md:w-36"
+      src="assets/martin/mar3.jpeg"
+      alt="fotografía de Martin Sanchez"
+    />
+  </section>
+
+  <section class="mt-5">
+    <h2 class="inline-block border-b-4 text-2xl font-bold">Mas sobre mi</h2>
+
+    <p class="mt-2">
+      Soy un desarrollador web con cierta experiencia en el desarrollo de
+      paginas web. Me encanta aprender nuevas tecnologías y compartir mis
+      conocimientos con los demás.
+    </p>
+  </section>
+
+  <section class="mt-5 space-y-4 sm:mt-10">
+    <h2 class="inline-block border-b-4 text-2xl font-bold">Bio</h2>
+    <ul class="space-y-2">
+      <li *ngFor="let item of bio" class="space-x-2">
+        <i class="{{ item.icon }}"></i>
+        <span class="font-bold">{{ item.type }}:</span>
+        {{ item.value }}
+      </li>
+    </ul>
+  </section>
+
+  <section class="mt-5 space-y-4 sm:mt-10">
+    <h2 class="inline-block border-b-4 text-2xl font-bold">Contacto</h2>
+    <ul class="space-y-2">
+      <li *ngFor="let item of contact" class="space-x-2">
+        <i class="{{ item.icon }}"></i>
+        <span class="font-bold">{{ item.type }}:</span>
+        <a target="_blank" href="{{ item.link }}">{{ item.value }}</a>
+      </li>
+    </ul>
+  </section>
+</article>

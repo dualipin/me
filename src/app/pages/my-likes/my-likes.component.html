@@ -1,1 +1,22 @@
-<p>my-likes works!</p>
+<article class="py-5">
+  <h1 class="text-center text-4xl font-bold">Mis gustos</h1>
+
+  <nav class="my-4 rounded-md bg-slate-800">
+    <a routerLink="/my-likes">
+      <h2 class="py-1 text-center text-xl font-bold">Favoritos</h2>
+    </a>
+    <ul class="flex items-center justify-around rounded-md bg-slate-700 p-2">
+      <li *ngFor="let site of sites">
+        <a
+          class="rounded-xl p-2 transition-all ease-out hover:bg-slate-800"
+          routerLink="{{ site.url }}"
+          >{{ site.name }}</a
+        >
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+</article>

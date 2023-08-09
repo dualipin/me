@@ -1,1 +1,26 @@
-<p>nav works!</p>
+<nav
+  class="flex flex-wrap items-center justify-between bg-inherit px-3 py-1 transition-all duration-1000 sm:px-10 sm:py-2 lg:px-52"
+>
+  <a
+    class="space-x-4 text-3xl"
+    href="http://github.com/dualipin"
+    target="_blank"
+    ><i class="fa-brands fa-github"></i>
+    <h1 class="inline-block font-['Vina_Sans']">Martin Sanchez</h1>
+  </a>
+
+  <div class="group relative">
+    <i class="fa-solid fa-bars mb-3 mt-1 text-2xl sm:hidden"></i>
+
+    <ul
+      class="absolute right-0 z-10 hidden rounded border border-slate-500 bg-slate-700 px-4 py-2 pr-40 text-lg shadow-md shadow-slate-700 transition-all duration-1000 group-hover:block sm:static sm:flex sm:items-center sm:space-x-4 sm:space-y-0 sm:bg-transparent sm:pr-4 sm:text-base sm:group-hover:flex"
+    >
+      <li class="transition-all duration-500" *ngFor="let route of routes">
+        <nav-link
+          [route-link]="route.link"
+          [route-name]="route.name"
+        ></nav-link>
+      </li>
+    </ul>
+  </div>
+</nav>

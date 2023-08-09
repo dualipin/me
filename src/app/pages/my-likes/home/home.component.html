@@ -1,0 +1,16 @@
+<article class="flex flex-col">
+  <section
+    class="m-3 flex flex-col items-center justify-center rounded-lg bg-slate-800/40"
+    *ngFor="let fav of favoritos"
+  >
+    <div class="my-2 text-center">
+      <h3>{{ fav.type }}</h3>
+      <h2 class="text-3xl font-semibold">{{ fav.name }}</h2>
+    </div>
+    <img
+      class="my-4 aspect-square w-48 rounded-3xl object-cover"
+      src="{{ fav.image }}"
+      alt="imagen de {{ fav.name }}"
+    />
+  </section>
+</article>

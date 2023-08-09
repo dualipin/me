@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-likes.component.css']
 })
 export class MyLikesComponent {
-
+  sites = [
+    {
+      name: 'Canciones',
+      url: 'cancion'
+    },
+    {
+      name: 'Cantante',
+      url: 'cantante'
+    },
+    {
+      name: 'Genero',
+      url: 'genero'
+    }
+  ]
 }
