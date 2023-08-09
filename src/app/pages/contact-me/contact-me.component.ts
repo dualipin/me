@@ -12,13 +12,7 @@ interface Comentario {
   styleUrls: ['./contact-me.component.css']
 })
 export class ContactMeComponent {
-  comentarios: Comentario[] = [
-    {
-      nombre: 'Juan',
-      correo: 'correo@dasdasda.com',
-      mensaje: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
-    },
-  ]
+  comentarios: Comentario[] = []
 
 
   nombre: string = ''
